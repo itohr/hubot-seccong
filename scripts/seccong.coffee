@@ -15,4 +15,8 @@ module.exports = (robot) ->
         statement: statement 
         uid: uid
       , (err, res, body) ->
-        msg.send body["text"]
+        bot_resp = body["response"].join("\n")
+        if body["chips"]
+          chips = body["chips"].join(", ")
+          bot_resp = bot_resp + "\n" + "ヒント：" + chips
+        msg.send bot_resp 

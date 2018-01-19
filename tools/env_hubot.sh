@@ -7,4 +7,4 @@ export MATTERMOST_HTTP_PORT=8065
 export MATTERMOST_TLS_VERIFY=false
 export MATTERMOST_USER=seccong@example.com
 export MATTERMOST_LOG_LEVEL=debug
-export SECCONG_SERVER_URL=http://localhost:8064/api
+export SECCONG_SERVER_URL=http://localhost:5000/api
