@@ -18,5 +18,5 @@ module.exports = (robot) ->
         bot_resp = body["response"].join("\n")
         if body["chips"]
           chips = body["chips"].join(", ")
-          bot_resp = bot_resp + "\n" + "選択肢：" + chips
+          bot_resp = bot_resp + "\n" + "例：" + chips
         msg.send bot_resp 
